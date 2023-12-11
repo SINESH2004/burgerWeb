@@ -1,5 +1,5 @@
 body {
-    background-image: url('https://raw.githubusercontent.com/SINESH2004/burgerWeb-Images/main/Background-image.jpeg');
+    background-image: url('src\resources\images\Edited.png');
     background-size: cover;
     height: 100vh;
 }
@@ -14,8 +14,8 @@ body {
     display: inline;
     font-size: 90px;
     font-weight: bolder;
-    font-family: "Jacques Francois Shadow";
-    color: aliceblue;
+    font-family: "Black Ops One";
+    color: rgb(255, 255, 255);
 }
 
 input,
