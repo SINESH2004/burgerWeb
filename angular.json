@@ -16,32 +16,17 @@
                         "outputPath": "dist/burger-web",
                         "index": "src/index.html",
                         "main": "src/main.ts",
-                        "polyfills": [
-                            "zone.js"
-                        ],
+                        "polyfills": ["zone.js"],
                         "tsConfig": "tsconfig.app.json",
-                        "assets": [
-                            "src/favicon.ico",
-                            "src/assets"
-                        ],
-                        "styles": [
-                            "node_modules/bootstrap/dist/css/bootstrap.min.css",
-                            "src/styles.css"
-                        ],
+                        "assets": ["src/favicon.ico", "src/assets", "src/resources"],
+                        "styles": ["node_modules/bootstrap/dist/css/bootstrap.min.css", "src/styles.css"],
                         "scripts": []
                     },
                     "configurations": {
                         "production": {
-                            "budgets": [{
-                                    "type": "initial",
-                                    "maximumWarning": "500kb",
-                                    "maximumError": "1mb"
-                                },
-                                {
-                                    "type": "anyComponentStyle",
-                                    "maximumWarning": "2kb",
-                                    "maximumError": "4kb"
-                                }
+                            "budgets": [
+                                { "type": "initial", "maximumWarning": "500kb", "maximumError": "1mb" },
+                                { "type": "anyComponentStyle", "maximumWarning": "2kb", "maximumError": "4kb" }
                             ],
                             "outputHashing": "all"
                         },
@@ -59,36 +44,22 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
-                        "production": {
-                            "browserTarget": "burgerWeb:build:production"
-                        },
-                        "development": {
-                            "browserTarget": "burgerWeb:build:development"
-                        }
+                        "production": { "browserTarget": "burgerWeb:build:production" },
+                        "development": { "browserTarget": "burgerWeb:build:development" }
                     },
                     "defaultConfiguration": "development"
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
-                    "options": {
-                        "browserTarget": "burgerWeb:build"
-                    }
+                    "options": { "browserTarget": "burgerWeb:build" }
                 },
                 "test": {
                     "builder": "@angular-devkit/build-angular:karma",
                     "options": {
-                        "polyfills": [
-                            "zone.js",
-                            "zone.js/testing"
-                        ],
+                        "polyfills": ["zone.js", "zone.js/testing"],
                         "tsConfig": "tsconfig.spec.json",
-                        "assets": [
-                            "src/favicon.ico",
-                            "src/assets"
-                        ],
-                        "styles": [
-                            "src/styles.css"
-                        ],
+                        "assets": ["src/favicon.ico", "src/assets", "src/resources"],
+                        "styles": ["src/styles.css"],
                         "scripts": []
                     }
                 }

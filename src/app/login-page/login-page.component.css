@@ -1,5 +1,5 @@
-body {
-    background-image: url('src\resources\images\Edited.png');
+.background-image {
+    background-image: url("./images/BackgroundImage.png");
     background-size: cover;
     height: 100vh;
 }
